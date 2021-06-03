@@ -18,3 +18,10 @@
     margin-top: 1.5vh;
     font-size: 1.3em;
 }
+.statbox{
+    background-color: darkslategray;
+    margin: 1vw;
+    color:white;
+    border-radius: 5px;
+    padding: 1vh 1.5vw;
+}
