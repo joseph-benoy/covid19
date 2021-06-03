@@ -8,6 +8,14 @@ export default class Home extends Component{
         this.state = {
             covid :{}
         };
+        this.refreshStats = ()=>{
+            console.log("clicked");
+            axios.get("https://corona.lmao.ninja/v2/all?today")
+            .then((response)=>{
+                this.setState({covid:response.data});
+            })
+            .catch((error)=>console.log(error));
+        }
     }
     componentWillMount(){
         axios.get("https://corona.lmao.ninja/v2/all?today")
@@ -19,6 +27,11 @@ export default class Home extends Component{
     render(){
         return(
             <>
+                <div className="row">
+                    <div className="col-lg-12">
+                        <button className="btn btn-primary refresh-btn" onClick={this.refreshStats}>&#x21BA;</button>
+                    </div>
+                </div>            
                 <div className="container-fluid">
                     <div className="row">
                         <Statbox title="Cases" val1={`Total : ${this.state.covid.cases}`} val2={`Today : ${this.state.covid.todayCases}`}/>
