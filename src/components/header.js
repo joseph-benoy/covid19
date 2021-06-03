@@ -30,7 +30,7 @@ class Header extends Component{
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid">
+                <div className="container-fluid ">
                     <Switch>
                         <Route exact path="/">
                             <Home/>

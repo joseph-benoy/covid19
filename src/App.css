@@ -1,10 +1,14 @@
+:root{
+    --baseColor:darkslategray ;
+}
 *{
     margin: 0;
     padding: 0;
 }
 .header{
-    background-color:darkslategray ;
+    background-color: var(--baseColor);
     padding: 2vh;
+    margin-bottom: 10vh;
 }
 .header-link{
     color: white;
@@ -19,9 +23,18 @@
     font-size: 1.3em;
 }
 .statbox{
-    background-color: darkslategray;
-    margin: 1vw;
+    background-color: var(--baseColor);
+    margin: 4vw;
     color:white;
     border-radius: 5px;
-    padding: 1vh 1.5vw;
+    padding: 1vh 1.6vw;
+}
+@media only screen and (max-width:1199px){
+    .statbox{
+        margin: 2vh 0;
+        padding-left: 5vw;
+    }
+    .header{
+        margin-bottom: 0vh;
+    }
 }
