@@ -24,7 +24,7 @@ export default class Countries extends Component{
                 <div className="col-lg-12">
                     <div className="accordion" id="accordionExample">
                         {this.state.countries.map((item,key)=>(
-                            <Accord title={item.country} src={item.countryInfo.flag} totalCases={item.}/>
+                            <Accord testsPerMillion={item.testsPerOneMillion} critical={item.critical} recovered={item.recovered} active={item.active} todayDeaths={item.todayDeaths} totalDeaths={item.deaths} todayCases={item.todayCases} title={item.country} src={item.countryInfo.flag} totalCases={item.cases}/>
                         ))}
                     </div>
                 </div>

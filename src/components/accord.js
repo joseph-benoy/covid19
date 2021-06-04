@@ -7,12 +7,12 @@ export default class Accord extends Component{
     render(){
         return(
             <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTwo">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h2 className="accordion-header" id={"heading"+this.props.title}>
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#"+this.props.title} aria-expanded="false" aria-controls={this.props.title}>
                     {this.props.title}
                 </button>
                 </h2>
-                <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div id={this.props.title} className="accordion-collapse collapse" aria-labelledby={this.props.title} data-bs-parent="#accordionExample">
                 <div className="accordion-body">
                     <table>
                         <thead>
