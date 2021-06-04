@@ -47,8 +47,11 @@
     background-color: var(--baseColor);
     border-color: var(--baseColor);
 }
-.accordion-body th,td{ 
-    margin-right: 2vw !important;
+.accordTable{
+    margin-left: 1vw;
+}
+.accordTable th{ 
+    padding: 1vw;
 }
 
 

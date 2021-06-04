@@ -14,7 +14,7 @@ export default class Accord extends Component{
                 </h2>
                 <div id={this.props.title} className="accordion-collapse collapse" aria-labelledby={this.props.title} data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                    <table>
+                    <table className="accordTable">
                         <thead>
                             <tr>
                                 <th>
