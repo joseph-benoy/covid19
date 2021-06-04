@@ -5,7 +5,6 @@ import {
     Route,
     Switch
 } from 'react-router-dom';
-import India from './india';
 import Countries from './countries';
 import Home from './home';
 
@@ -25,9 +24,6 @@ class Header extends Component{
                         <div className="col-lg-1">
                             <Link className="header-link menu" to="countries">Countries</Link>
                         </div>
-                        <div className="col-lg-1">
-                            <Link className="header-link menu" to="india">India</Link>
-                        </div>
                     </div>
                 </div>
                 <div className="container-fluid ">
@@ -37,9 +33,6 @@ class Header extends Component{
                         </Route>
                         <Route path="/countries">
                             <Countries/>
-                        </Route>
-                        <Route path="/india">
-                            <India/>
                         </Route>
                     </Switch>
                     </div>
